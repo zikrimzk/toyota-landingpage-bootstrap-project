@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toyota Malaysia</title>
+    <link rel="icon" type="image/x-icon" href="img/newlogo.png">
+    <link href="css/mainmin.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+       .c-item{
+
+       // height: 600px;
+
+       } 
+       .c-img{
+
+        //height: 100%;
+        //object-fit: cover;
+
+       }
+    </style>
+  </head>
+  <body class="bg-light">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fs-6 navbar-light bg-light sticky-top border-bottom border-4 border-danger">
+        <div class="container">
+            <a href="#intro" class="navbar-brand">
+                <span><img src="img/newlogo.png" alt="logo" class="img-fluid" style="width:70px"></span>
+            </a>
+            <!-- toggle btn for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav justify-content-around">
+                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#sidebar" class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Models</a></li>
+                    <li class="nav-item"><a href="#promotion" class="nav-link">Promotions</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Our Branch</a></li>
+                    <li class="nav-item ms-2 d-none d-md-inline ">
+                        <!-- <a href="" class="btn btn-danger rounded-pill fw-bold">Enquiry Now !</a> -->
+                        <button class="btn btn-danger rounded-pill fs-6" data-bs-toggle="modal" data-bs-target="#reg-modal">Enquiry Now</button>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="img/banner1.webp" class="d-block w-100 c-img" alt="">
+              </div>
+              <div class="carousel-item c-item">
+                <img src="img/banner2.webp" class="d-block w-100 c-img" alt="...">
+              </div>
+              <div class="carousel-item c-item">
+                <img src="img/bannner3.webp" class="d-block w-100 c-img" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- main image & intro text -->
+    <section id="intro">
+        <div class="container my-5">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <span class="bg-danger text-white rounded-pill fs-5 p-2">NEW</span>
+                        <div class="display-2 text-danger">Toyota XTREME </div>
+                        <div class="display-5 text-muted">The Versatile Engine</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus maxime maiores tenetur recusandae, nulla hic.</p>
+                    <a href="#pricing" class="btn btn-outline-success btn-lg ">Explore more</a>
+
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <span class="tt" data-bs-placement="bottom" title="All New Toyota Xtreme">
+                        <img src="img/perodua.png" alt="banner" class="img-fluid ">
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="container  my-5">
+            <div class="row justify-content-center align-content-center">
+                <div class="col-md-6 d-none d-md-block ">
+                    <img src="img/camry.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center text-md-start ">
+                    <h1>
+                        <span class="fw-bold fs-5 text-bg-success px-2 rounded-pill">EV</span>
+                        <div class="display-2 text-danger">Toyota Camry </div>
+                        <div class="display-5 text-muted">The Lagendary </div>
+
+                    </h1>
+                    <p class="lead text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, et hic beatae quia alias temporibus?</p>
+                    <button class="my-3 btn btn-outline-success btn-lg">Explore more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pricing plans -->
+    <section class=" mt-5" id="promotion">
+        <div class="container">
+            <div class="text-center">
+                <h2>Our Promotions</h2>
+                <p class="lead text-muted">Explore our new limited promotions now !</p>
+            </div>
+
+            <div class="row my-5 align-items-center justify-content-center">
+                <div class="C1 col-8 col-lg-4 col-xl-3"style="transition: 0.5s ease-in-out;">
+                    <div class="CC1 card bg-white border-0 ">
+                        <img src="img/promo1.jpg" alt="">
+                        <div class="card-body py-4">
+                            <h4 class="card-title text-decoration-underline fw-bolder">YARIS</h4>
+                            <!-- <p class="lead card-subtitle">22 April 2023 - 31 June 2023 only </p> -->
+                            <div class="my-4">
+                                <h4 class="lead card-subtitle">Monthly instalments as low as</h4>
+                                <p class="display-6  text-dark fw-bold">RM1,108**</p>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark fw-bold mt-3">SPEAK TO SALES ADVISOR</a>
+                            <div class="my-3">
+                                <a href="#" class="link-danger fw-bold text-decoration-none ">DOWNLOAD BROCHURE </a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="C2 col-8 col-lg-4 col-xl-3" style="transition: 0.5s ease-in-out;">
+                    <div class="CC2 card border-0 border-danger ">
+                        <img src="img/promo2.webp" alt="">
+                        <!-- <div class="card-header text-center text-danger">LIMITED OFFER !</div> -->
+                        <div class="card-body py-4">
+                            <h4 class="card-title text-decoration-underline fw-bolder">COROLLA</h4>
+                            <div class="my-4">
+                                <h4 class="lead card-subtitle">Promo worth up to</h4>
+                                <p class="display-6  text-dark fw-bold">RM5,490*</p>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark fw-bold mt-3">SPEAK TO SALES ADVISOR</a>
+                            <div class="my-3">
+                                <a href="#" class="link-danger fw-bold text-decoration-none ">DOWNLOAD BROCHURE </a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="C3 col-8 col-lg-4 col-xl-3 " style="transition: 0.5s ease-in-out;">
+                    <div class="CC3 card border-0 bg-white ">
+                        <img src="img/promo3.webp" alt="">
+                        <div class="card-body py-4">
+                            <h4 class="card-title text-decoration-underline fw-bolder">HILUX</h4>
+                            <!-- <p class="lead card-subtitle">22 April 2023 - 31 June 2023 only </p> -->
+                            <div class="my-4">
+                                <h4 class="lead card-subtitle">Promo worth up to</h4>
+                                <p class="display-6  text-dark fw-bold">RM3,585*</p>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark fw-bold mt-3">SPEAK TO SALES ADVISOR</a>
+                            <div class="my-3">
+                                <a href="#" class="link-danger fw-bold text-decoration-none ">DOWNLOAD BROCHURE </a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+<!-- Enquiry Form-->
+    <section id="enquiry">
+        <div class="container ">
+            <div class="text-center">
+                <h2>Enquiry Form</h2>
+                <p class="lead text-muted">Any question ? Fill out the form to contact us directly....</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form action="">
+                        <label for="email" class="form-label">Email :</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g. xxxx@example.com">
+                            <span class="input-group-text">
+                                <span class="tt" title="Please key-in valid email" data-bs-placement="bottom">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <label for="name" class="form-label">Name :</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-circle"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g. Syakir">
+                            <span class="input-group-text">
+                                <span class="tt" title="Please enter your name for our reference.." data-bs-placement="bottom">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <label for="subject" class="form-label">What is your question ? :</label>
+                        <!-- <input type="text" class="form-control border-danger" id="name" placeholder="e.g. Syakir"> -->
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-left"></i>
+                            </span>
+                            <select  id="subject" class="form-select">
+                                <option value="-" class="form-select">Select </option>
+                                <option value="pricing" class="form-select">Pricing </option>
+                                <option value="promotion" class="form-select">Promotion</option>
+                                <option value="loan" class="form-select">Loan</option>
+                                <option value="other" class="form-select">Others</option>
+                            </select>
+                        </div>
+                        
+
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea  id="query" style="height: 100px;" class="form-control"></textarea>
+                            <label for="query">Your query...</label>
+                        </div>
+                        <div class="mb-4 text-end">
+                            <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- modal itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get the Latest Updates !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Iure incidunt corporis 
+                        delectus veritatis blanditiis id labore esse 
+                        unde quidem culpa!
+                    </p>
+                    <label for="modal-email" class="form-label">Email :</label>
+                    <input type="email" id="modal-email" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label" style="transition: .5s ease-in-out;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">Our Model</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row my-3 justify-content-center align-content-center">
+                <div class="col-6">
+                    <img src="img/rush.webp" alt="" class="img-fluid">
+
+                </div>
+                <div class="col-6">
+                    <h4>
+                        <div class="h4 fw-bolder">Rush</div>
+                        <p class="lead text-muted">From RM 95,000 </p>
+
+                    </h4>
+                </div>
+            </div>
+
+
+            <div class="row my-3 justify-content-center align-content-center">
+                <div class="col-6">
+                    <img src="img/cross.webp" alt="" class="img-fluid">
+
+                </div>
+                <div class="col-6">
+                    <h4>
+                        <div class="h4 fw-bolder">Corolla Cross</div>
+                        <p class="lead text-muted">From RM 143,000 </p>
+
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row my-3 justify-content-center align-content-center">
+                <div class="col-6">
+                    <img src="img/supra.webp" alt="" class="img-fluid">
+
+                </div>
+                <div class="col-6">
+                    <h4>
+                        <div class="h4 fw-bolder">Supra GT</div>
+                        <p class="lead text-muted">From RM 665,000 </p>
+
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        const tooltips = document.querySelectorAll(".tt")
+        tooltips.forEach(t=>{
+            new bootstrap.Tooltip(t)
+        });
+
+
+
+        const card = document.querySelector(".C1")
+        const card1 = document.querySelector(".C2")
+        const card2 = document.querySelector(".C3")
+
+
+
+        
+        $(".CC1").mouseenter(function(){
+            card.classList.remove("col-xl-3");
+            card.classList.add("col-xl-4 ");
+
+        });
+        $(".CC1").mouseleave(function(){
+            card.classList.remove("col-xl-4");
+            card.classList.add("col-xl-3");
+
+        });
+
+        $(".CC2").mouseenter(function(){
+            card1.classList.remove("col-xl-3");
+            card1.classList.add("col-xl-4 ");
+
+        });
+        $(".CC2").mouseleave(function(){
+            card1.classList.remove("col-xl-4");
+            card1.classList.add("col-xl-3");
+
+        });
+
+        $(".CC3").mouseenter(function(){
+            card2.classList.remove("col-xl-3");
+            card2.classList.add("col-xl-4 ");
+
+        });
+        $(".CC3").mouseleave(function(){
+            card2.classList.remove("col-xl-4");
+            card2.classList.add("col-xl-3");
+
+        });
+        
+    </script>
+  </body>
+</html>

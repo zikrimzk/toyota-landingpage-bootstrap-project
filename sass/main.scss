@@ -1,0 +1,15 @@
+$danger :#c90c0c;
+$light : #f8f8f8;
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-theme:(
+    "purple" : #9923ed,
+    "light-purple" : #d498ff,
+    "dark-purple" : #6400ab
+);
+
+$theme-colors: map-merge($custom-theme,$theme-colors);
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';
